@@ -3,6 +3,10 @@ def fibonacci(n):
     Returns 'nth' number in the Fibonacci
     sequence. (0, 1, 1, 2, 3, 5, ...)
     """
+
+    if isinstance(n, bool) or not isinstance(n, int):
+        return 'Function only accepts integers!'
+
     if n == 0:
         return 0
     elif n == 1:
@@ -17,6 +21,9 @@ def lucas(n):
     Similar to Fibonacci, but starts with 2 and 1.
     (2, 1, 3, 4, 7, 11, 18, ...)
     """
+    if isinstance(n, bool) or not isinstance(n, int):
+        return 'Function only accepts integers!'
+
     if n == 0:
         return 2
     elif n == 1:
@@ -31,6 +38,9 @@ def sum_series(n, i=0, j=1):
     given a first and second argument.
     (i, j, i+j, i+2j, 2i+3j, ...)
     """
+    if isinstance(n, bool) or not isinstance(n, int):
+        return 'Function only accepts integers!'
+
     if n == 0:
         return i
     elif n == 1:

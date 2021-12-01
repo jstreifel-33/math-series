@@ -107,13 +107,13 @@ def test_sum_series_5():
 
 def test_sum_series_as_fib():
     actual = sum_series(5, 0, 1)
-    expected = 5
+    expected = fibonacci(5)
     assert actual == expected
 
 
 def test_sum_series_as_lucas():
     actual = sum_series(5, 2, 1)
-    expected = 11
+    expected = lucas(5)
     assert actual == expected
 
 def test_sum_series_i3_j6():
@@ -128,7 +128,41 @@ def test_sum_series_n3_i4_j5():
     expected = 14
     assert actual == expected
 
-def test_sum_serites_n5_i100_j123():
+def test_sum_series_n5_i100_j123():
     actual = sum_series(5, 100, 123)
     expected = 915
+    assert actual == expected
+
+
+# edge cases
+
+## input not a number
+
+def test_fibonacci_not_number():
+    actual = fibonacci('string')
+    expected = 'Function only accepts integers!'
+    assert actual == expected
+
+
+def test_lucas_not_number():
+    actual = lucas(True)
+    expected = 'Function only accepts integers!'
+    assert actual == expected
+
+
+def test_sum_series_not_number():
+    actual = sum_series(3.14)
+    expected = 'Function only accepts integers!'
+    assert actual == expected
+
+
+def test_sum_series_not_number():
+    actual = sum_series(0, 3.14, 9)
+    expected = 'Function only accepts integers!'
+    assert actual == expected
+
+
+def test_sum_series_not_number():
+    actual = sum_series(0, 9, 3.14)
+    expected = 'Function only accepts integers!'
     assert actual == expected
