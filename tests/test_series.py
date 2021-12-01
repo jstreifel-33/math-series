@@ -107,13 +107,13 @@ def test_sum_series_5():
 
 def test_sum_series_as_fib():
     actual = sum_series(5, 0, 1)
-    expected = fibonacci(5)
+    expected = 5
     assert actual == expected
 
 
 def test_sum_series_as_lucas():
     actual = sum_series(5, 2, 1)
-    expected = lucas(5)
+    expected = 11
     assert actual == expected
 
 
