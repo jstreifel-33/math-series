@@ -136,7 +136,7 @@ def test_sum_series_n5_i100_j123():
 
 # edge cases
 
-## input not a number
+## input not an integer
 
 def test_fibonacci_not_number():
     actual = fibonacci('string')
@@ -157,12 +157,12 @@ def test_sum_series_not_number():
 
 
 def test_sum_series_not_number():
-    actual = sum_series(0, 3.14, 9)
+    actual = sum_series(0, 'whee', 9)
     expected = 'Function only accepts integers!'
     assert actual == expected
 
 
 def test_sum_series_not_number():
-    actual = sum_series(0, 9, 3.14)
+    actual = sum_series(0, 9, False)
     expected = 'Function only accepts integers!'
     assert actual == expected

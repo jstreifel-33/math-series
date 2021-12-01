@@ -1,10 +1,18 @@
+def confirm_ints(*things):
+    for thing in things:
+        if isinstance(thing, bool) or not isinstance(thing, int):
+            return False
+
+    return True
+
+
 def fibonacci(n):
     """
     Returns 'nth' number in the Fibonacci
     sequence. (0, 1, 1, 2, 3, 5, ...)
     """
 
-    if isinstance(n, bool) or not isinstance(n, int):
+    if confirm_ints(n) == False:
         return 'Function only accepts integers!'
 
     if n == 0:
@@ -21,7 +29,7 @@ def lucas(n):
     Similar to Fibonacci, but starts with 2 and 1.
     (2, 1, 3, 4, 7, 11, 18, ...)
     """
-    if isinstance(n, bool) or not isinstance(n, int):
+    if confirm_ints(n) == False:
         return 'Function only accepts integers!'
 
     if n == 0:
@@ -38,7 +46,7 @@ def sum_series(n, i=0, j=1):
     given a first and second argument.
     (i, j, i+j, i+2j, 2i+3j, ...)
     """
-    if isinstance(n, bool) or not isinstance(n, int):
+    if confirm_ints(n, j, i) == False:
         return 'Function only accepts integers!'
 
     if n == 0:
