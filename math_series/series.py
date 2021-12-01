@@ -34,4 +34,4 @@ def sum_series(n, i=0, j=1):
   elif n == 1:
     return j
   
-  return sum_series(n-1) + sum_series(n-2)
+  return sum_series(n-1, i, j) + sum_series(n-2, i, j)

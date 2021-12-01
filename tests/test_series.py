@@ -85,12 +85,12 @@ def test_sum_series_5():
 
 ### fixed n=5; variable i, j
 
-def test_sum_series_i0_j1():
+def test_sum_series_as_fib():
   actual = sum_series(5, 0, 1)
   expected = 5
   assert actual == expected
 
-def test_sum_series_i1_j1():
-  actual = sum_series(5,1,1)
-  expected = 8
+def test_sum_series_as_lucas():
+  actual = sum_series(5, 2, 1)
+  expected = 11
   assert actual == expected
