@@ -4,7 +4,7 @@ import pytest
 #Deco for skipping tests:
 #@pytest.mark.skip("pending")
 
-# Fibonacci tests
+# fibonacci tests
 
 def test_import_fibonacci():
   assert fibonacci
@@ -29,7 +29,7 @@ def test_fibonacci_10():
   expected = 55
   assert actual == expected
 
-# Lucas tests
+# lucas tests
 
 def test_import_lucas():
   assert lucas
@@ -52,4 +52,16 @@ def test_lucas_5():
 def test_lucas_10():
   actual = lucas(10)
   expected = 123
+  assert actual == expected
+
+# sum_series tests
+
+def test_import_sum_series():
+  assert sum_series
+
+## variable n; default i, j
+
+def test_sum_series_0():
+  actual = sum_series(0)
+  expected = 0
   assert actual == expected

@@ -23,7 +23,7 @@ def lucas(n):
   
   return lucas(n-1) + lucas(n-2)
 
-def sum_series(n, i, j):
+def sum_series(n, i=0, j=1):
   """
   Returns 'nth' number in any sum sequence,
   given a first and second argument.
