@@ -4,4 +4,4 @@ A series of functions for returning the 'nth value' of Fibonacci, Lucas, and cus
 
 Deployment: Code is not deployed. To run, clone repository and execute locally.
 
-Submission PR: [PR #](http.cats)
+Submission PR: [Working branch #1](https://github.com/jstreifel-33/math-series/pull/1)
