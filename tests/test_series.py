@@ -78,3 +78,7 @@ def test_sum_series_0():
   expected = 0
   assert actual == expected
 
+def test_sum_series_5():
+  actual = sum_series(5)
+  expected = 5
+  assert actual == expected

@@ -29,4 +29,9 @@ def sum_series(n, i=0, j=1):
   given a first and second argument.
   (i, j, i+j, i+2j, 2i+3j, ...)
   """
-  pass
+  if n < 1:
+    return 0
+  elif n < 2:
+    return 1
+  
+  return sum_series(n-1) + sum_series(n-2)
