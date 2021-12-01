@@ -116,17 +116,21 @@ def test_sum_series_as_lucas():
     expected = lucas(5)
     assert actual == expected
 
+
 def test_sum_series_i3_j6():
     actual = sum_series(5, 3, 6)
     expected = 39
     assert actual == expected
 
+
 ### variable n, i, j
+
 
 def test_sum_series_n3_i4_j5():
     actual = sum_series(3, 4, 5)
     expected = 14
     assert actual == expected
+
 
 def test_sum_series_n5_i100_j123():
     actual = sum_series(5, 100, 123)
@@ -138,31 +142,32 @@ def test_sum_series_n5_i100_j123():
 
 ## input not an integer
 
+
 def test_fibonacci_not_number():
-    actual = fibonacci('string')
-    expected = 'Function only accepts integers!'
+    actual = fibonacci("string")
+    expected = "Function only accepts integers!"
     assert actual == expected
 
 
 def test_lucas_not_number():
     actual = lucas(True)
-    expected = 'Function only accepts integers!'
+    expected = "Function only accepts integers!"
     assert actual == expected
 
 
 def test_sum_series_not_number():
     actual = sum_series(3.14)
-    expected = 'Function only accepts integers!'
+    expected = "Function only accepts integers!"
     assert actual == expected
 
 
 def test_sum_series_not_number():
-    actual = sum_series(0, 'whee', 9)
-    expected = 'Function only accepts integers!'
+    actual = sum_series(0, "whee", 9)
+    expected = "Function only accepts integers!"
     assert actual == expected
 
 
 def test_sum_series_not_number():
     actual = sum_series(0, 9, False)
-    expected = 'Function only accepts integers!'
+    expected = "Function only accepts integers!"
     assert actual == expected
