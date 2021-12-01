@@ -6,8 +6,12 @@ import pytest
 
 # fibonacci tests
 
+## proof of import life
+
 def test_import_fibonacci():
   assert fibonacci
+
+## signature testing
 
 def test_fibonacci_0():
   actual = fibonacci(0)
@@ -31,8 +35,12 @@ def test_fibonacci_10():
 
 # lucas tests
 
+## proof of import life
+
 def test_import_lucas():
   assert lucas
+
+## signature testing
 
 def test_lucas_0():
   actual = lucas(0)
@@ -56,12 +64,17 @@ def test_lucas_10():
 
 # sum_series tests
 
+## proof of import life
+
 def test_import_sum_series():
   assert sum_series
 
-## variable n; default i, j
+## signature testing
+
+### variable n; default i, j
 
 def test_sum_series_0():
   actual = sum_series(0)
   expected = 0
   assert actual == expected
+
