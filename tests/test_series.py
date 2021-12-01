@@ -115,3 +115,20 @@ def test_sum_series_as_lucas():
     actual = sum_series(5, 2, 1)
     expected = 11
     assert actual == expected
+
+def test_sum_series_i3_j6():
+    actual = sum_series(5, 3, 6)
+    expected = 39
+    assert actual == expected
+
+### variable n, i, j
+
+def test_sum_series_n3_i4_j5():
+    actual = sum_series(3, 4, 5)
+    expected = 14
+    assert actual == expected
+
+def test_sum_serites_n5_i100_j123():
+    actual = sum_series(5, 100, 123)
+    expected = 915
+    assert actual == expected
