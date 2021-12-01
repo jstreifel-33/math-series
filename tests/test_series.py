@@ -18,3 +18,23 @@ def test_fibonacci_2():
   actual = fibonacci(2)
   expected = 1
   assert actual == expected
+
+def test_fibonacci_5():
+  actual = fibonacci(5)
+  expected = 5
+  assert actual == expected
+
+def test_fibonacci_10():
+  actual = fibonacci(10)
+  expected = 55
+  assert actual == expected
+
+# Lucas tests
+
+def test_import_lucas():
+  assert lucas
+
+def test_lucas_0():
+  actual = lucas(0)
+  expected = 2
+  assert actual == expected
